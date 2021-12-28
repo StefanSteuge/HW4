@@ -1,26 +1,38 @@
 package com.cursor;
 
-public class Sphere extends Shape {
-    private int vertex;
-    private double radius;
+public class Sphere extends SpaceShape {
 
-    public Sphere(int x, int y, int z) {
-        super(x, y, z);
-    }
+  public Sphere(int xa, int xb, int ya, int yb, int za, int zb) {
 
-    public int getVertex() {
-        return vertex;
-    }
+    this.xa = xa;
+    this.xb = xb;
+    this.ya = ya;
+    this.yb = yb;
+    this.za = za;
+    this.zb = zb;
+  }
 
-    public void setVertex(int vertex) {
-        this.vertex = vertex;
-    }
+  @Override
+  public String toString() {
+    return "Sphere { " +
+            "za = " + za +
+            ", zb = " + zb +
+            ", area = " + getArea() +
+            ", volume = " + getVolume() +
+            " }";
+  }
 
-    public double getRadius() {
-        return radius;
-    }
+  // V_volume = 4/3 π r³
+    // S_area = 4πR2
 
-    public void setRadius(double radius) {
-        this.radius = radius;
-    }
+
+  @Override
+  public double getArea() {
+    return 4/3f*Math.PI * Math.pow(getRadius(),3);
+  }
+
+  @Override
+  public double getVolume() {
+    return 4 * Math.PI * Math.pow(getRadius(),2);
+  }
 }

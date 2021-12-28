@@ -1,44 +1,41 @@
 package com.cursor;
 
-public class Cuboid extends Shape {
-    private int vertex;
-    private int width;
-    private int height;
-    private int depth;
+public class Cuboid extends SpaceShape {
 
-    public Cuboid(int x, int y, int z) {
-        super(x, y, z);
+    public Cuboid(int xa, int xb, int ya, int yb, int za, int zb) {
+
+        this.xa = xa;
+        this.xb = xb;
+        this.ya = ya;
+        this.yb = yb;
+        this.za = za;
+        this.zb = zb;
+    }
+// S_area = 6S2
+    // V_volume =S3
+
+
+    @Override
+    public String toString() {
+        return "Cuboid { " +
+                "xa = " + xa +
+                ", xb = " + xb +
+                ", ya = " + ya +
+                ", yb = " + yb +
+                ", za = " + za +
+                ", zb = " + zb +
+                ", area = " + getArea() +
+                ", volume = " + getVolume() +
+                " }";
     }
 
-    public int getVertex() {
-        return vertex;
+    @Override
+    public double getArea() {
+        return 6 * Math.pow(getDepth(),2);
     }
 
-    public void setVertex(int vertex) {
-        this.vertex = vertex;
-    }
-
-    public int getWidth() {
-        return width;
-    }
-
-    public void setWidth(int width) {
-        this.width = width;
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
-    }
-
-    public int getDepth() {
-        return depth;
-    }
-
-    public void setDepth(int depth) {
-        this.depth = depth;
+    @Override
+    public double getVolume() {
+        return Math.pow(getDepth(),3);
     }
 }

@@ -1,36 +1,39 @@
 package com.cursor;
 
-public class Rectangle extends Shape {
+public class Rectangle extends PlaneShape {
 
-    private int vertex1;
-    private int width;
-    private int height ;
+    public Rectangle(int xa, int xb, int ya, int yb) {
 
-    public Rectangle(int x, int y) {
-        super(x, y);
+        this.xa = xa;
+        this.xb = xb;
+        this.ya = ya;
+        this.yb = yb;
     }
 
-    public int getVertex1() {
-        return vertex1;
+        // P_perimeter = (a+b)*2
+        // S_area      =  a*h
+
+
+    @Override
+    public String toString() {
+        return "Rectangle { " +
+                "xa = " + xa +
+                ", xb = " + xb +
+                ", ya = " + ya +
+                ", yb = " + yb +
+                ", area = " + getArea() +
+                ", perimeter = " + getPerimeter() +
+                " }";
     }
 
-    public void setVertex1(int vertex1) {
-        this.vertex1 = vertex1;
+    @Override
+    public double getArea() {
+    return getA() * getHeight();
     }
 
-    public int getWidth() {
-        return width;
-    }
 
-    public void setWidth(int width) {
-        this.width = width;
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
-    }
+    @Override
+    public double getPerimeter() {
+       return 2*(getA() + getB());
+            }
 }

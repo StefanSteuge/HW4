@@ -1,26 +1,37 @@
 package com.cursor;
 
-public class Circle extends Shape{
-    private int vertex1;
-    private double radius;
+public class Circle extends PlaneShape{
 
-    public Circle(int x, int y) {
-        super(x, y);
+    public Circle(int xa, int xb, int ya, int yb) {
+
+        this.xa = xa;
+        this.xb = xb;
+        this.ya = ya;
+        this.yb = yb;
     }
 
-    public int getVertex1() {
-        return vertex1;
+       // P_perimeter = 2*3.14*R
+    // S_area = 3,14*R2
+
+
+    @Override
+    public String toString() {
+        return "Circle { " +
+                "xa = " + xa +
+                ", ya = " + ya +
+                ", area = " + getArea() +
+                ", perimrter = " + getPerimeter() +
+                " }";
     }
 
-    public void setVertex1(int vertex1) {
-        this.vertex1 = vertex1;
+    @Override
+    public double getArea() {
+        return Math.round(Math.PI * Math.pow(getRadius(), 2));
     }
 
-    public double getRadius() {
-        return radius;
+    @Override
+    public double getPerimeter() {
+        return Math.PI * Math.pow(getRadius(),2);
     }
 
-    public void setRadius(double radius) {
-        this.radius = radius;
-    }
 }

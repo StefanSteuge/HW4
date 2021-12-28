@@ -1,40 +1,61 @@
 package com.cursor;
 
 public abstract class Shape {
-    private int x;
-    private int y;
-    private int z;
 
-    public Shape(int x, int y, int z) {
-        this.x = x;
-        this.y = y;
-        this.z = z;
+    private int a = 20;
+    private int b = 15;
+
+    private double width = 12.5;
+    private double height = 25.7;
+    private double depth = 8.1;
+    private double radius = 20.0;
+
+
+    public int getA() {
+        return a;
     }
 
-    public Shape(int x, int y) {
+    public void setA(int a) {
+        this.a = a;
     }
 
-    public int getX() {
-        return x;
+    public int getB() {
+        return b;
     }
 
-    public void setX(int x) {
-        this.x = x;
+    public void setB(int b) {
+        this.b = b;
     }
 
-    public int getY() {
-        return y;
+    public double getWidth() {
+        return width;
     }
 
-    public void setY(int y) {
-        this.y = y;
+    public void setWidth(int width) {
+        this.width = width;
     }
 
-    public int getZ() {
-        return z;
+    public double getHeight() {
+        return height;
     }
 
-    public void setZ(int z) {
-        this.z = z;
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public double getDepth() {
+        return depth;
+    }
+
+    public void setDepth(int depth) {
+        this.depth = depth;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
     }
 }
