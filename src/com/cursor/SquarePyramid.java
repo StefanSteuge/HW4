@@ -11,9 +11,16 @@ public class SquarePyramid extends SpaceShape {
         this.za = za;
         this.zb = zb;
     }
-    // S_area = a*a+4(a*b/2)
-    // V_volume = 1/3*a*b*h
 
+    @Override
+    public double getArea() {
+        return Math.pow(getWidth(), 2) + 4 * (getDepth() * getHeight() / 2);
+    }
+
+    @Override
+    public double getVolume() {
+        return 1 / 3f * getWidth() * getDepth() * getHeight();
+    }
 
     @Override
     public String toString() {
@@ -27,15 +34,5 @@ public class SquarePyramid extends SpaceShape {
                 ", area = " + getArea() +
                 ", volume = " + getVolume() +
                 " }";
-    }
-
-    @Override
-    public double getArea() {
-        return Math.pow(getWidth(),2) + 4 * (getDepth()*getHeight()/2);
-    }
-
-    @Override
-    public double getVolume() {
-        return 1 / 3f * getWidth() * getDepth() * getHeight();
     }
 }

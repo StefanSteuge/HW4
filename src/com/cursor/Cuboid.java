@@ -11,9 +11,16 @@ public class Cuboid extends SpaceShape {
         this.za = za;
         this.zb = zb;
     }
-// S_area = 6S2
-    // V_volume =S3
 
+    @Override
+    public double getArea() {
+        return 6 * Math.pow(getDepth(), 2);
+    }
+
+    @Override
+    public double getVolume() {
+        return Math.pow(getDepth(), 3);
+    }
 
     @Override
     public String toString() {
@@ -27,15 +34,5 @@ public class Cuboid extends SpaceShape {
                 ", area = " + getArea() +
                 ", volume = " + getVolume() +
                 " }";
-    }
-
-    @Override
-    public double getArea() {
-        return 6 * Math.pow(getDepth(),2);
-    }
-
-    @Override
-    public double getVolume() {
-        return Math.pow(getDepth(),3);
     }
 }

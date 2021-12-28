@@ -10,9 +10,16 @@ public class Rectangle extends PlaneShape {
         this.yb = yb;
     }
 
-        // P_perimeter = (a+b)*2
-        // S_area      =  a*h
+    @Override
+    public double getArea() {
+        return getA() * getHeight();
+    }
 
+
+    @Override
+    public double getPerimeter() {
+        return 2 * (getA() + getB());
+    }
 
     @Override
     public String toString() {
@@ -25,15 +32,4 @@ public class Rectangle extends PlaneShape {
                 ", perimeter = " + getPerimeter() +
                 " }";
     }
-
-    @Override
-    public double getArea() {
-    return getA() * getHeight();
-    }
-
-
-    @Override
-    public double getPerimeter() {
-       return 2*(getA() + getB());
-            }
 }

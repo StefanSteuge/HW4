@@ -10,9 +10,15 @@ public class Triangle extends PlaneShape {
         this.yb = yb;
     }
 
-    // P_perimeter = A+B+H
-    // S_area = A*H
+    @Override
+    public double getArea() {
+        return getA() + getB() + getHeight();
+    }
 
+    @Override
+    public double getPerimeter() {
+        return getA() * getHeight();
+    }
 
     @Override
     public String toString() {
@@ -24,15 +30,5 @@ public class Triangle extends PlaneShape {
                 ", area = " + getArea() +
                 ", perimeter = " + getPerimeter() +
                 " }";
-    }
-
-    @Override
-    public double getArea() {
-        return getA()+getB()+getHeight();
-    }
-
-    @Override
-    public double getPerimeter() {
-        return getA()*getHeight();
     }
 }

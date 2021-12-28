@@ -8,10 +8,9 @@ public abstract class PlaneShape extends Shape implements AreaMeasurable, Perime
     int yb;
 
 
-    public double getDistance() {
-        return Math.sqrt((xa - xb) * (xa - xb) + (ya - yb) * (ya - yb));
-    }
+//    public double getDistance() {
+//        return Math.sqrt((xa - xb) * (xa - xb) + (ya - yb) * (ya - yb));
+//    }
 }
 
 
-//  Math.sqrt(Math.pow(Xa-Xb)+Math.pow(Ya-Yb)
