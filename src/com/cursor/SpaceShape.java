@@ -10,9 +10,9 @@ public abstract class SpaceShape extends Shape implements AreaMeasurable, Volume
     int zb;
 
 
-//    public double getDistance() {
-//        return Math.sqrt((xa - xb) * (xa - xb) + (ya - yb) * (ya - yb) + (za - zb) * (za - zb));
-//    }
+    public double getDistance() {
+        return Math.sqrt((xa - xb) * (xa - xb) + (ya - yb) * (ya - yb) + (za - zb) * (za - zb));
+    }
 }
 
 

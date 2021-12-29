@@ -22,9 +22,10 @@ public class Circle extends PlaneShape {
 
     @Override
     public String toString() {
-        return "Circle { " +
-                "xa = " + xa +
+        return "Circle        | { coordinates " +
+                "( xa = " + xa +
                 ", ya = " + ya +
+                "), radius = " + getRadius() +
                 ", area = " + getArea() +
                 ", perimrter = " + getPerimeter() +
                 " }";

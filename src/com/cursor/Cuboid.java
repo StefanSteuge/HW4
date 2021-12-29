@@ -24,14 +24,14 @@ public class Cuboid extends SpaceShape {
 
     @Override
     public String toString() {
-        return "Cuboid { " +
-                "xa = " + xa +
+        return "Cuboid        | { coordinates" +
+                " ( xa = " + xa +
                 ", xb = " + xb +
                 ", ya = " + ya +
                 ", yb = " + yb +
                 ", za = " + za +
                 ", zb = " + zb +
-                ", area = " + getArea() +
+                "), area = " + getArea() +
                 ", volume = " + getVolume() +
                 " }";
     }

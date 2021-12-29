@@ -23,12 +23,12 @@ public class Rectangle extends PlaneShape {
 
     @Override
     public String toString() {
-        return "Rectangle { " +
-                "xa = " + xa +
+        return "Rectangle     | { coordinates" +
+                " ( xa = " + xa +
                 ", xb = " + xb +
                 ", ya = " + ya +
                 ", yb = " + yb +
-                ", area = " + getArea() +
+                "), area = " + getArea() +
                 ", perimeter = " + getPerimeter() +
                 " }";
     }

@@ -13,11 +13,11 @@ public class Main {
         double getDistance;
         Shape[] shapes = new Shape[6];
         shapes[0] = circle;
-        shapes[1] = rectangle;
-        shapes[2] = triangle;
-        shapes[3] = sphere;
-        shapes[4] = squarePyramid;
-        shapes[5] = cuboid;
+        shapes[1] = sphere;
+        shapes[2] = cuboid;
+        shapes[3] = triangle;
+        shapes[4] = rectangle;
+        shapes[5] = squarePyramid;
         for (Shape shape : shapes) {
             System.out.println(shape.toString());
         }

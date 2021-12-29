@@ -24,14 +24,14 @@ public class SquarePyramid extends SpaceShape {
 
     @Override
     public String toString() {
-        return "SquarePyramid { " +
-                "xa = " + xa +
+        return "SquarePyramid | { coordinates" +
+                " ( xa = " + xa +
                 ", xb = " + xb +
                 ", ya = " + ya +
                 ", yb = " + yb +
                 ", za = " + za +
                 ", zb = " + zb +
-                ", area = " + getArea() +
+                "), area = " + getArea() +
                 ", volume = " + getVolume() +
                 " }";
     }

@@ -22,12 +22,12 @@ public class Triangle extends PlaneShape {
 
     @Override
     public String toString() {
-        return "Triangle { " +
-                "xa = " + xa +
+        return "Triangle      | { coordinates" +
+                " ( xa = " + xa +
                 ", xb = " + xb +
                 ", ya = " + ya +
                 ", yb = " + yb +
-                ", area = " + getArea() +
+                "), area = " + getArea() +
                 ", perimeter = " + getPerimeter() +
                 " }";
     }

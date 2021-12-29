@@ -24,9 +24,10 @@ public class Sphere extends SpaceShape {
 
   @Override
   public String toString() {
-    return "Sphere { " +
-            "za = " + za +
+    return "Sphere        | { coordinates" +
+            " ( za = " + za +
             ", zb = " + zb +
+            "), radius = " + getRadius() +
             ", area = " + getArea() +
             ", volume = " + getVolume() +
             " }";
