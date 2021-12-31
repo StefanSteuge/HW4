@@ -16,12 +16,12 @@ public class Triangle extends PlaneShape {
 
     @Override
     public double getArea() {
-        return getDistPlane() + getDistPlane() + getDistPlane();
+        return a + a + a;
     }
 
     @Override
     public double getPerimeter() {
-        return getDistPlane() * getDistPlane();
+        return a * a;
     }
 
     @Override

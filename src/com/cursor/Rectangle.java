@@ -12,13 +12,13 @@ public class Rectangle extends PlaneShape {
 
     @Override
     public double getArea() {
-        return getDistPlane() * getDistPlane();
+        return a * a;
     }
 
 
     @Override
     public double getPerimeter() {
-        return 2 * (getDistPlane() + getDistPlane());
+        return 2 * (a + a);
     }
 
     @Override

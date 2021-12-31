@@ -14,12 +14,12 @@ public class Cuboid extends SpaceShape {
 
     @Override
     public double getArea() {
-        return 6 * Math.pow(getDistSpace(), 2);
+        return 6 * Math.pow(b, 2);
     }
 
     @Override
     public double getVolume() {
-        return Math.pow(getDistSpace(), 3);
+        return Math.pow(b, 3);
     }
 
     @Override

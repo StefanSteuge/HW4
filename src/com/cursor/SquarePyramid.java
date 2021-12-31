@@ -14,12 +14,12 @@ public class SquarePyramid extends SpaceShape {
 
     @Override
     public double getArea() {
-        return Math.pow(b, 2) + 4 * (getDistSpace() * getDistSpace() / 2);
+        return Math.pow(b, 2) + 4 * (b * b / 2);
     }
 
     @Override
     public double getVolume() {
-        return 1 / 3f * getDistSpace() * getDistSpace() * getDistSpace();
+        return 1 / 3f * b * b * b;
     }
 
     @Override
