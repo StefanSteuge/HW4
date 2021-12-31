@@ -2,6 +2,8 @@ package com.cursor;
 
 public class Circle extends PlaneShape {
 
+    private final double radius = 15;
+
     public Circle(int xa, int xb, int ya, int yb) {
 
         this.xa = xa;
@@ -12,12 +14,12 @@ public class Circle extends PlaneShape {
 
     @Override
     public double getArea() {
-        return Math.round(Math.PI * Math.pow(getRadius(), 2));
+        return Math.round(Math.PI * Math.pow(radius, 2));
     }
 
     @Override
     public double getPerimeter() {
-        return Math.PI * Math.pow(getRadius(), 2);
+        return Math.PI * Math.pow(radius, 2);
     }
 
     @Override
@@ -25,7 +27,7 @@ public class Circle extends PlaneShape {
         return "Circle        | { coordinates " +
                 "( xa = " + xa +
                 ", ya = " + ya +
-                "), radius = " + getRadius() +
+                "), radius = " + radius +
                 ", area = " + getArea() +
                 ", perimrter = " + getPerimeter() +
                 " }";

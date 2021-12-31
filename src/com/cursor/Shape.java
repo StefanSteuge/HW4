@@ -1,61 +1,20 @@
 package com.cursor;
 
 public abstract class Shape {
+    double a = getDistPlane();
+    double b = getDistSpace();
+    int xa;
+    int xb;
+    int ya;
+    int yb;
+    int za;
+    int zb;
 
-    private int a = 20;
-    private int b = 15;
-
-    private double width = 12.5;
-    private double height = 25.7;
-    private double depth = 8.1;
-    private double radius = 20.0;
-
-
-    public int getA() {
+    public double getDistPlane(){
         return a;
     }
 
-    public void setA(int a) {
-        this.a = a;
-    }
-
-    public int getB() {
+    public double getDistSpace() {
         return b;
-    }
-
-    public void setB(int b) {
-        this.b = b;
-    }
-
-    public double getWidth() {
-        return width;
-    }
-
-    public void setWidth(int width) {
-        this.width = width;
-    }
-
-    public double getHeight() {
-        return height;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
-    }
-
-    public double getDepth() {
-        return depth;
-    }
-
-    public void setDepth(int depth) {
-        this.depth = depth;
-    }
-
-    public double getRadius() {
-        return radius;
-    }
-
-    public void setRadius(double radius) {
-        this.radius = radius;
     }
 }

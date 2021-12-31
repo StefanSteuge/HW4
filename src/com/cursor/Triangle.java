@@ -1,23 +1,27 @@
 package com.cursor;
 
 public class Triangle extends PlaneShape {
+    public Triangle() {
+    }
 
-    public Triangle(int xa, int xb, int ya, int yb) {
+    public Triangle(int xa, int xb, int ya, int yb, int za, int zb) {
 
         this.xa = xa;
         this.xb = xb;
         this.ya = ya;
         this.yb = yb;
+        this.za = za;
+        this.zb = zb;
     }
 
     @Override
     public double getArea() {
-        return getA() + getB() + getHeight();
+        return getDistPlane() + getDistPlane() + getDistPlane();
     }
 
     @Override
     public double getPerimeter() {
-        return getA() * getHeight();
+        return getDistPlane() * getDistPlane();
     }
 
     @Override
