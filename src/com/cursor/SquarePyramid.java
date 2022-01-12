@@ -2,35 +2,35 @@ package com.cursor;
 
 public class SquarePyramid extends SpaceShape {
 
-    public SquarePyramid(int xa, int xb, int ya, int yb, int za, int zb) {
+    public SquarePyramid(int Ax, int Bx, int Ay, int By, int Cx, int Cy) {
 
-        this.xa = xa;
-        this.xb = xb;
-        this.ya = ya;
-        this.yb = yb;
-        this.za = za;
-        this.zb = zb;
+        this.Ax = Ax;
+        this.Bx = Bx;
+        this.Ay = Ay;
+        this.By = By;
+        this.Cx = Cx;
+        this.Cy = Cy;
     }
 
     @Override
     public double getArea() {
-        return Math.pow(b, 2) + 4 * (b * b / 2);
+        return Math.pow(size_B, 2) + 4 * (size_A * size_B / 2);
     }
 
     @Override
     public double getVolume() {
-        return 1 / 3f * b * b * b;
+        return 1 / 3f * size_A * size_B * size_C;
     }
 
     @Override
     public String toString() {
         return "SquarePyramid | { coordinates" +
-                " ( xa = " + xa +
-                ", xb = " + xb +
-                ", ya = " + ya +
-                ", yb = " + yb +
-                ", za = " + za +
-                ", zb = " + zb +
+                " ( Ax = " + Ax +
+                ", Bx = " + Bx +
+                ", Ay = " + Ay +
+                ", By = " + By +
+                ", Cx = " + Cx +
+                ", Cy = " + Cy +
                 "), area = " + getArea() +
                 ", volume = " + getVolume() +
                 " }";

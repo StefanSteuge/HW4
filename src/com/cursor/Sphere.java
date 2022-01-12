@@ -4,14 +4,14 @@ public class Sphere extends SpaceShape {
 
     private final double radius = 20.0;
 
-    public Sphere(int xa, int xb, int ya, int yb, int za, int zb) {
+    public Sphere(int Ax, int Bx, int Ay, int By, int Cx, int Cy) {
 
-        this.xa = xa;
-        this.xb = xb;
-        this.ya = ya;
-        this.yb = yb;
-        this.za = za;
-        this.zb = zb;
+        this.Ax = Ax;
+        this.Bx = Bx;
+        this.Ay = Ay;
+        this.By = By;
+        this.Cx = Cx;
+        this.Cy = Cy;
     }
 
     @Override
@@ -27,8 +27,8 @@ public class Sphere extends SpaceShape {
   @Override
   public String toString() {
     return "Sphere        | { coordinates" +
-            " ( za = " + za +
-            ", zb = " + zb +
+            " ( Ax = " + Ax +
+            ", Bx = " + Bx +
             "), radius = " + radius +
             ", area = " + getArea() +
             ", volume = " + getVolume() +

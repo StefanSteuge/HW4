@@ -2,35 +2,35 @@ package com.cursor;
 
 public class Cuboid extends SpaceShape {
 
-    public Cuboid(int xa, int xb, int ya, int yb, int za, int zb) {
+    public Cuboid(int Ax, int Bx, int Ay, int By, int Cx, int Cy) {
 
-        this.xa = xa;
-        this.xb = xb;
-        this.ya = ya;
-        this.yb = yb;
-        this.za = za;
-        this.zb = zb;
+        this.Ax = Ax;
+        this.Bx = Bx;
+        this.Ay = Ay;
+        this.By = By;
+        this.Cx = Cx;
+        this.Cy = Cy;
     }
 
     @Override
     public double getArea() {
-        return 6 * Math.pow(b, 2);
+        return 6 * Math.pow(size_B, 2);
     }
 
     @Override
     public double getVolume() {
-        return Math.pow(b, 3);
+        return Math.pow(size_B, 3);
     }
 
     @Override
     public String toString() {
         return "Cuboid        | { coordinates" +
-                " ( xa = " + xa +
-                ", xb = " + xb +
-                ", ya = " + ya +
-                ", yb = " + yb +
-                ", za = " + za +
-                ", zb = " + zb +
+                " ( Ax = " + Ax +
+                ", Bx = " + Bx +
+                ", Ay = " + Ay +
+                ", By = " + By +
+                ", Cx = " + Cx +
+                ", Cy = " + Cy +
                 "), area = " + getArea() +
                 ", volume = " + getVolume() +
                 " }";

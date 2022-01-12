@@ -4,12 +4,12 @@ public class Circle extends PlaneShape {
 
     private final double radius = 15;
 
-    public Circle(int xa, int xb, int ya, int yb) {
+    public Circle(int Ax, int Bx, int Ay, int By) {
 
-        this.xa = xa;
-        this.xb = xb;
-        this.ya = ya;
-        this.yb = yb;
+        this.Ax = Ax;
+        this.Bx = Bx;
+        this.Ay = Ay;
+        this.By = By;
     }
 
     @Override
@@ -24,13 +24,7 @@ public class Circle extends PlaneShape {
 
     @Override
     public String toString() {
-        return "Circle        | { coordinates " +
-                "( xa = " + xa +
-                ", ya = " + ya +
-                "), radius = " + radius +
-                ", area = " + getArea() +
-                ", perimrter = " + getPerimeter() +
-                " }";
+        return "Circle        | { coordinates " + "( Ax = " + Ax + ", Bx = " + Bx + "), radius = " + radius + ", area = " + getArea() + ", perimrter = " + getPerimeter() + " }";
     }
 
 }

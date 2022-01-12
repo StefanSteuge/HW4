@@ -1,38 +1,42 @@
 package com.cursor;
 
 public class Triangle extends PlaneShape {
-    public Triangle() {
-    }
+    private double perimeter;
+    private double hlPerim;
+    private double area;
 
-    public Triangle(int xa, int xb, int ya, int yb, int za, int zb) {
+    public Triangle(int Ax, int Bx, int Ay, int By, int Cx, int Cy) {
 
-        this.xa = xa;
-        this.xb = xb;
-        this.ya = ya;
-        this.yb = yb;
-        this.za = za;
-        this.zb = zb;
-    }
-
-    @Override
-    public double getArea() {
-        return a + a + a;
+        this.Ax = Ax;
+        this.Bx = Bx;
+        this.Ay = Ay;
+        this.By = By;
+        this.Cx = Cx;
+        this.Cy = Cy;
     }
 
     @Override
     public double getPerimeter() {
-        return a * a;
+        perimeter = size_A + size_B + size_C;
+        return perimeter;
+    }
+
+    @Override
+    public double getArea() {
+        hlPerim = perimeter/2;
+       area = Math.sqrt(hlPerim * (hlPerim - size_A) * (hlPerim - size_B) * (hlPerim - size_C));
+        return area;
     }
 
     @Override
     public String toString() {
         return "Triangle      | { coordinates" +
-                " ( xa = " + xa +
-                ", xb = " + xb +
-                ", ya = " + ya +
-                ", yb = " + yb +
-                "), area = " + getArea() +
-                ", perimeter = " + getPerimeter() +
+                " ( Ax =" + Ax +
+                ", Bx =" + Bx +
+                ", Ay =" + Ay +
+                ", By =" + By +
+                "), area = " + area +
+                ", perimeter = " + perimeter +
                 " }";
     }
 }

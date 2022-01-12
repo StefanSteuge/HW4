@@ -2,32 +2,32 @@ package com.cursor;
 
 public class Rectangle extends PlaneShape {
 
-    public Rectangle(int xa, int xb, int ya, int yb) {
+    public Rectangle(int Ax, int Bx, int Ay, int By) {
 
-        this.xa = xa;
-        this.xb = xb;
-        this.ya = ya;
-        this.yb = yb;
+        this.Ax = Ax;
+        this.Bx = Bx;
+        this.Ay = Ay;
+        this.By = By;
     }
 
     @Override
     public double getArea() {
-        return a * a;
+        return size_A * size_B;
     }
 
 
     @Override
     public double getPerimeter() {
-        return 2 * (a + a);
+        return 2 * (size_A + size_B);
     }
 
     @Override
     public String toString() {
         return "Rectangle     | { coordinates" +
-                " ( xa = " + xa +
-                ", xb = " + xb +
-                ", ya = " + ya +
-                ", yb = " + yb +
+                " ( Ax = " + Ax +
+                ", Bx = " + Bx +
+                ", Ay = " + Ay +
+                ", By = " + By +
                 "), area = " + getArea() +
                 ", perimeter = " + getPerimeter() +
                 " }";
