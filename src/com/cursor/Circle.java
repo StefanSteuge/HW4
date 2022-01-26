@@ -24,7 +24,12 @@ public class Circle extends PlaneShape {
 
     @Override
     public String toString() {
-        return "Circle        | { coordinates " + "( Ax = " + Ax + ", Bx = " + Bx + "), radius = " + radius + ", area = " + getArea() + ", perimrter = " + getPerimeter() + " }";
+        return "Circle        | { coordinates " +
+                "( Ax = " + Ax +
+                ", Bx = " + Bx +
+                "), radius = " + radius +
+                ", area = " + getArea() +
+                ", perimrter = " + getPerimeter() +
+                " }";
     }
-
 }

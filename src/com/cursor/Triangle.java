@@ -23,8 +23,8 @@ public class Triangle extends PlaneShape {
 
     @Override
     public double getArea() {
-        hlPerim = perimeter/2;
-       area = Math.sqrt(hlPerim * (hlPerim - size_A) * (hlPerim - size_B) * (hlPerim - size_C));
+        hlPerim = perimeter / 2;
+        area = Math.sqrt(hlPerim * (hlPerim - size_A) * (hlPerim - size_B) * (hlPerim - size_C));
         return area;
     }
 

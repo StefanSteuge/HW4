@@ -24,14 +24,14 @@ public class Sphere extends SpaceShape {
         return 4 * Math.PI * Math.pow(radius, 2);
     }
 
-  @Override
-  public String toString() {
-    return "Sphere        | { coordinates" +
-            " ( Ax = " + Ax +
-            ", Bx = " + Bx +
-            "), radius = " + radius +
-            ", area = " + getArea() +
-            ", volume = " + getVolume() +
-            " }";
-  }
+    @Override
+    public String toString() {
+        return "Sphere        | { coordinates" +
+                " ( Ax = " + Ax +
+                ", Bx = " + Bx +
+                "), radius = " + radius +
+                ", area = " + getArea() +
+                ", volume = " + getVolume() +
+                " }";
+    }
 }

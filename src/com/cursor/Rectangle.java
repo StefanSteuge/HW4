@@ -15,7 +15,6 @@ public class Rectangle extends PlaneShape {
         return size_A * size_B;
     }
 
-
     @Override
     public double getPerimeter() {
         return 2 * (size_A + size_B);
