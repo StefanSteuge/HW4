@@ -21,6 +21,42 @@ public abstract class Shape {
     public Shape() {
     }
 
+    public double getSize_A() {
+        return size_A;
+    }
+
+    public double getSize_B() {
+        return size_B;
+    }
+
+    public double getSize_C() {
+        return size_C;
+    }
+
+    public double getAx() {
+        return Ax;
+    }
+
+    public double getBx() {
+        return Bx;
+    }
+
+    public double getAy() {
+        return Ay;
+    }
+
+    public double getBy() {
+        return By;
+    }
+
+    public double getCx() {
+        return Cx;
+    }
+
+    public double getCy() {
+        return Cy;
+    }
+
     public Shape(double size_A, double size_B) {
         this.size_A = size_A;
         this.size_B = size_B;

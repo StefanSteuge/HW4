@@ -1,6 +1,13 @@
 package com.cursor;
 
 public class Cuboid extends SpaceShape {
+    double area;
+    double volume;
+
+    public Cuboid(double area, double volume) {
+        this.area = area;
+        this.volume = volume;
+    }
 
     public Cuboid(int Ax, int Bx, int Ay, int By, int Cx, int Cy) {
 
@@ -14,12 +21,12 @@ public class Cuboid extends SpaceShape {
 
     @Override
     public double getArea() {
-        return 6 * Math.pow(size_B, 2);
+        return area = 6 * Math.pow(getSize_B(), 2);
     }
 
     @Override
     public double getVolume() {
-        return Math.pow(size_B, 3);
+        return volume = Math.pow(getSize_B(), 3);
     }
 
     @Override
@@ -31,8 +38,8 @@ public class Cuboid extends SpaceShape {
                 ", By = " + By +
                 ", Cx = " + Cx +
                 ", Cy = " + Cy +
-                "), area = " + getArea() +
-                ", volume = " + getVolume() +
+                "), area = " + area +
+                ", volume = " + volume +
                 " }";
     }
 }
